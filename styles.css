@@ -1,0 +1,158 @@
+:root {
+    --azul: #4682A9;
+    --azul2: #749BC2;
+    --azul3: #91C8E4;
+    --gris: #F6F4EB;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-size: 62.5%;
+}
+
+.fondo-img{
+    background-color: var(--gris);
+    padding: 2rem;
+    border-radius: 50%;
+    width: 20rem;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;        
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    width: 90rem;
+    margin: 3rem auto;
+    background-color: var(--azul);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 2.5rem;
+    border-radius: 2.25rem;
+}
+
+.fondo-header-1{
+    background-color: var(--azul3);
+    width: 45rem;
+    padding: 1.25rem;
+    text-align: center;
+    border-radius: 1.25rem;
+}
+
+.header-1 {
+    color: var(--gris);
+    font-size: 3.25rem;
+    
+}
+
+.contendor-principal {
+    background-color: var(--azul2);
+    width: 90rem;
+    height: auto;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border-radius: 2.25rem;
+}
+
+fieldset {
+    width: 80rem;
+    margin: 1.5rem auto;
+    background-color: var(--gris);
+    padding: 1.75rem;
+}
+
+.variables {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.25rem;
+    width: 75rem;
+    margin: 1.5rem auto;
+}
+
+.text-input {
+    width: 100%;
+    height: 2.25rem;
+    font-size: 2rem; 
+    border: none;   
+    border-bottom: solid var(--azul3);
+    background-color: transparent;
+}
+
+label, legend {
+    font-size: 1.75rem;
+    font-weight: 700;   
+    
+}
+
+legend {
+    background-color: var(--azul3);
+    color: var(--gris);
+    padding: 0.5rem 1.5rem;    
+}
+
+fieldset {
+    border: none;
+}
+
+select {
+    width: 100%;
+    height: 2.25rem;
+    font-size: 2rem; 
+    background-color: var(--azul);  
+    border: none;
+    border-bottom: solid var(--azul3);
+    
+}
+
+option {
+    font-size: 2rem;
+    margin: 25px;
+    background-color: var(--azul);
+    color: var(--gris);
+}
+
+.margin-boton {
+    width: 80rem;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.boton {
+    background-color: var(--azul);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    padding: 0.75rem 2.25rem;
+    border: none;
+    border-radius: 2.25px;
+    color: var(--gris);
+    font-weight: 700;
+}
+
+.boton:hover {
+    background-color: var(--azul3);
+    color: var(--gris);
+    
+}
+
+
+.warning {
+    background-color: rgb(255,199,206);
+    color: rgb(156,0,6);
+}
+
+.good {
+    background-color: rgb(198,239,206);
+    color: rgb(0,97,0); 
+}
